@@ -1,0 +1,336 @@
+/*
+===============
+Global Styles
+===============
+*/
+
+body {
+    font-family: "Fahkwang", sans-serif, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    margin: 0;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .card {
+    margin: 20px 10px 20px 10px;
+    padding: 20px 20px 20px 20px;
+    transition: all 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 600px;
+  }
+  
+  .icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+/*
+===============
+Navbar
+===============
+*/
+
+nav {
+    background-color: rgb(102, 102, 51) !important;
+  }
+  
+  .container-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  
+  /*
+  ===============
+  JUMBOTRON
+  ===============
+  */
+  
+  .jumbotron { 
+    background: url("../img/kopfleiste_mistel.png") no-repeat center center;
+    /* background: yellow;  */
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container-jumbo {
+    width: 70%;
+  }
+  
+  .header-jumbo {
+    background-color: rgb(153, 0, 0);
+    color: white;
+    padding: 1rem;
+  }
+  
+  .text-jumbo {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .text-center {
+    width: 50%;
+  }
+  
+  /*
+  ===============
+  INDEX
+  ===============
+  */
+  
+  #licht {
+    width: 863px;
+    height: 548px;
+  }
+  
+  /* .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  } */
+  
+  /* .container {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  } */
+  
+  .container-home {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+  }
+  
+  .container-let {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+  }
+  
+  .table-admin {
+    font-size: 10pt;
+  }
+  /*
+  .container-admin {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  } */
+  
+  .formular:hover {
+    transform: scale(1.05);
+  }
+  
+  .formular {
+    margin: 20px 10px 20px 10px;
+    padding: 20px 20px 20px 20px;
+    transition: all 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    width: 30%;
+  }
+  
+  .gruen {
+    background-color: rgb(102, 102, 51);
+  }
+  
+  /******************************
+  WINDOW-STYLING
+  ******************************/
+  
+  .container-cal {
+    background-color: rgb(102, 102, 51) !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* .notReady {
+    background-color: white !important;
+  } */
+  
+  .window {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(153, 0, 0);
+    border-radius: 5%;
+    margin: 1rem;
+    /* color: red; */
+    font-size: 24px;
+    min-width: 150px;
+    /* -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform; */
+  }
+  
+  .notReady:hover {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transition: 1s;
+  }
+  
+  .clicked {
+    background-color: red;
+    border-radius: 5pt;
+    transition: 1s;
+  }
+  
+  .window.clicked p {
+    color: white;
+    font-size: 12pt;
+  }
+
+  /* .clickable{
+    pointer-events: none;
+    cursor: default;
+  } */
+  
+  .bild_beschriftung {
+    position: relative;
+    color: black;
+  }
+  .caro {
+    display: block;
+    background: red;
+    /* background: rgb(240, 236, 187); */
+    /* background: rgb(211, 25, 25); */
+  }
+  
+  .wod {
+    color: black;
+    position: absolute;
+    left: 5px;
+    top: 30px;
+  }
+
+/*
+===============
+MEDIA QUERIES
+===============
+*/
+
+@media (max-width: 500px) {
+
+  /* .window, .card, .caro, .clicked {
+    min-width: 150px;
+    margin: 20px 10px 20px 0px;
+    padding: 20px 20px 20px 0px;
+  } */
+
+  /* .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-items: flex-start;
+  } */
+
+  /*   .container {
+    padding-left: 0;
+  } */
+
+  /*
+Navbar
+*/
+
+  .navbar-left {
+    display: none;
+  }
+
+  /*
+Jumbotron start
+*/
+
+  .jumbotron {
+    background-size: 200% 100%;
+  }
+
+  .container-jumbo {
+    width: 100%;
+  }
+
+  .header-jumbo {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+
+  .text-center {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+
+  /*
+index
+*/
+
+  #licht {
+    width: 480px;
+    height: 304px;
+  }
+
+  .container {
+    border: none;
+  }
+
+  .container-day {
+    /* background: white; */
+    width: 100%;
+    border: none;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+    border: none;
+  }
+
+  #ropeclimb {
+    width: 215px;
+    height: 42px;
+  }
+
+  .rudolf_error{
+    width: 100px;
+    height: 50px;
+  }
+
+  #schneeschaufeln{
+    width: 256px;
+    height: 256px;
+  }
+
+  #brieferl{
+    width: 256px;
+    height: 256px;
+}
+
+#kinotime{
+  width: 256px;
+  height: 256px;
+}
+
+}
