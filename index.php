@@ -11,6 +11,7 @@ define('CONFIG_DIR', __DIR__.'/config');
 require_once __DIR__.'/includes.php';
 
 $userId = getCurrentUserId();
+echo "<br>". $userId;
 
 setcookie('userId', $userId, strtotime ('+30 days')); 
 

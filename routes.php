@@ -1,13 +1,13 @@
 <?php
 
 $url = $_SERVER['REQUEST_URI'];
-// echo $url;
+echo $url;
 // echo "<hr>";
 
 $indexPHPPosition = strpos($url, 'index.php');
 $baseUrl = substr($url,0,$indexPHPPosition);
 
-//echo $baseUrl;
+echo $baseUrl;
 
 $route = null;
 if (false !== $indexPHPPosition)

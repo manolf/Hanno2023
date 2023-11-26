@@ -1,7 +1,6 @@
 <?php
 
 //alle Funktionen zu den Tagen des Advents
-//entspricht den Produkten des Warenkorbs
 
 function getAllDays()
 {
