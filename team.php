@@ -15,10 +15,9 @@ require_once 'assets/configBootstrap.php';
         <section class="secret m-4 p-4 border rounded">
 
             <h3 class="font-weight-bold mb-4 mt-4">Hier sind wir..</h3>
-            <p>Bestimmt hast du dich gefragt, wer diese hellen, klugen, motivierten, kreativen und ausdauernden Köpfe sind, welche mit Elfen- und Rentierpower unaufhaltsam dem Ziel entgegenstreben, dich fit bis zum Christbaum zu bringen, oder?
+            <p>.. das Team, welches mit Elfen- und Rentierpower unaufhaltsam dem Ziel entgegenstrebt, dich fit bis zum Christbaum zu bringen.
                 <br>
-                Wir sind auf jeden Fall mit Spaß dabei und hoffen, wir können/konnten dir mit Hanno und seinen Freund*innen den Advent etwas versüßen.
-                <br> Lass es uns wissen, sag uns, ob wir unser Ziel erreicht haben! Du kannst uns unter <a href="kontakt.php">Kontakt</a> eine Nachricht zukommen lassen!
+                Wir hoffen, wir können/konnten dir mit Hanno und seinen Freund*innen den Advent etwas versüßen.
             </p>
 
         </section>
@@ -136,8 +135,9 @@ require_once 'assets/configBootstrap.php';
                 https://www.instagram.com/ninaslchnr/" target="_blank">Nina, </a>  <a href="
                 https://www.instagram.com/karin_project_you/" target="_blank">Karin, </a>  
                 <a href="
-                https://www.instagram.com/claudia.zazz/" target="_blank">Claudia, </a>  <a href="
-                https://www.instagram.com/crossfreedell/" target="_blank">Freedell, </a>  <a href="
+                https://www.instagram.com/claudia.zazz/" target="_blank">Claudia, </a>  
+                <!-- <a href="https://www.instagram.com/crossfreedell/" target="_blank">Freedell, </a>   -->
+                <a href="
                 https://www.instagram.com/basti.rieder/" target="_blank">Basti, </a>  <a href="
                 https://www.instagram.com/langatium/" target="_blank">Heinz, </a>
                 <a href="https://www.instagram.com/emi__holy/" target="_blank">Emina, </a>
@@ -147,9 +147,12 @@ require_once 'assets/configBootstrap.php';
                 https://www.instagram.com/marcelinazappe/" target="_blank">Marcelina. </a>
 
 
-                 <br><br>Genauso aber auch <a href="
-                https://www.instagram.com/alfthamer/" target="_blank">Freddy: </a> für die tatkräftige Unterstützung bei der Hintergrundmusik.
+                 <!-- <br><br>Genauso aber auch <a href="
+                https://www.instagram.com/alfthamer/" target="_blank">Freddy: </a> für die tatkräftige Unterstützung bei der Hintergrundmusik. -->
             </p>
+
+            <p>Möchtest auch du Teil der motivierten <b>Fit-mit-Hanno-Gemeinde</b> sein und ein Workout mitgestalten?
+            <br>Gib uns einfach Bescheid unter <a href="kontakt.php">Kontakt</a> oder via social media!</p>
 
         </section>
     </div>

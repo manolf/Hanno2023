@@ -24,30 +24,26 @@
 
             <div class="view">
                 <img id="kinotime" src='assets/img/movie_night_transp.png' alt="Hanno und Rudi im Kinosessel" sstyle="width: 100%; height:auto;" class="img-fluid rounded">
+                
             </div>
+            
 
         </div>
         <div class="col-md-5 d-flex align-items-center mb-4">
             <div>
 
-            <h3 class="font-weight-bold mb-4"> </i>Hurra und willkommen! </h3>
+            <h3 class="font-weight-bold mb-4">Herzlich willkommen!</h3>
 
+                ...bald ist es wieder soweit!
                 <br>
-                Hurra, bald ist es wieder soweit... wir sind in den Startlöchern!
-                Unsere sportliche Adventszeit startet in Kürze!
 
-                 </p> <br>
-                Wir haben wieder einiges Neues vor: So wird es heuer erstmalig Special Yoga Workouts mit Elfin Mina geben!
-
-                <br>
-                Und auch dieses Jahr dürfen wir wieder neue Gastsportler*innen begrüßen!
-
-                <br>Möchtest auch du Teil der motivierten Hanno-Tabata-Gemeinde sein und ein workout mitgestalten: einfach melden! <br>
-                Elf Hanno ist schon ganz aus dem Häuschen <br>er schlägt bereits Räder!
+                <br>Wir haben uns auch für dieses Jahr etwas <b>Neues</b> für Euch überlegt: <br><br>
+                Es wird heuer erstmalig - immer jeweils an den Adventssonntagen - <b>Special Yoga Workouts mit Elfin Minella</b> geben!
+                <br>Nutze diese tolle Gelegenheit, um Geist und Seele baumeln zu lassen!
 
                 <br><br>
-                Auch wollen wir wieder ein neues Gewinnspiel für unsere Teilnehmer*innen starten.
-                <br>
+                Schau auch auf unsere Social Media Plattformen, um ja nichts Wichtiges oder lustiges Unwichtiges zu versäumen!
+                In diesem Sinne wünschen wir einen frohen, sportlichen, gesunden Advent!
 
 
 

@@ -11,8 +11,3 @@ define('DB_CHARSET','utf8');
 // define('DB_PASSWORD', '3');
 // define('DB_HOST', '127.0.0.1');
 // define('DB_CHARSET','utf8');
-
-
-// $username = "root"; //shop
-// $password = ""; //123456
-// $dsn = "mysql:host=localhost;dbname=shop;charset=utf8";

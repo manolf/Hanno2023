@@ -22,13 +22,31 @@ const app = Vue.createApp({
             const remainingHours = Math.floor(remainderDifferenceInHours);
             const remainingMinutes = Math.floor(remainderDifferenceInMinutes);
             const remainingSeconds =Math.floor(remainderDifferenceInSeconds);
-            this.timerOutput = "Noch " + remainingDays + " Tage " + ": " + remainingHours + " Stunden " + ": " + remainingMinutes + " Minuten " + ": " + remainingSeconds + " Sekunden";
-          },
-
+            this.timerOutput = "Start Adventkalender in " + remainingDays + " Tagen " + ": " + remainingHours + " Stunden " + ": " + remainingMinutes + " Minuten " + ": " + remainingSeconds + " Sekunden";
+          }
     },
+    // computed(){
+    //     iconLink(day){
+    //         return 	"./assets/img/icon/" + this.day.dayId + ".png";
+    //     }
+    // },
     mounted() {
         setInterval(() => { this.startTimer() }, 1000);
-     }
+     },
+
+    //  getAllDays(){
+    //     console.log("Aufruf getAllDays");
+    //     axios.get('ajaxfile.php')
+    //     .then(
+    //         response =>{
+    //             console.log(response.data)
+    //             this.days = response.data;
+    //         })
+    //     .catch(function (error) {
+    //         console.log(error);
+    //         });
+    //         return response;
+    //     }
     })
     
     app.mount('#app')

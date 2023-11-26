@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+//session_start();
 // error_reporting(-1);
 // ini_set('display_errors','On');
 
@@ -10,9 +10,9 @@ ini_set("display_errors", 1);
 define('CONFIG_DIR', __DIR__.'/config');
 require_once __DIR__.'/includes.php';
 
-$userId = getCurrentUserId();
+// $userId = getCurrentUserId();
 
-setcookie('userId', $userId, strtotime ('+30 days')); 
+// setcookie('userId', $userId, strtotime ('+30 days')); 
 
-$days = getAllDays();
+// $days = getAllDays();
 require __DIR__.'/templates/main.php';

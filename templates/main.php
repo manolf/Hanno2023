@@ -8,7 +8,7 @@ require_once './assets/configBootstrap.php';
 <div id="app">
 
     <div>
-        <h3 style="color: rgb(153, 0, 0);">{{timerOutput}}</h3>
+        <p class="pt-3" style="color: rgb(153, 0, 0);">{{timerOutput}}</p>
     </div>
 </div>
 
@@ -42,11 +42,11 @@ foreach ($offeneKacheln as $kachel)
 
 ?>
 
-<div class="container container-cal pb-5" id="adventtage" >
+<!-- <div class="container container-cal pb-5" id="adventtage" > -->
 
-    <?php foreach($days as $day):?>
+    <!-- <#?php foreach($days as $day):?>
 
-        <?php 
+        <#?php 
 
             if ( ($day['dayId'] > $today) || (!$timeReady) && (!$admin) )
             {
@@ -77,7 +77,7 @@ foreach ($offeneKacheln as $kachel)
         ?>
         
         
-    <?php endforeach;?>
+    <#?php endforeach;?> -->
 
 
 
@@ -94,6 +94,8 @@ foreach ($offeneKacheln as $kachel)
 
 
 <script src="app.js"></script>
+
+
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
 </body>

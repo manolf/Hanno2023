@@ -62,7 +62,7 @@ function isItTimeYet()
 {
     $datumHeute = mktime(0,0,0,$datumHeute = date("m"), $datumHeute = date("d"),$datumHeute = date("Y"));
  
-    $startDatum = mktime(0,0,0,12,01,2022);
+    $startDatum = mktime(0,0,0,12,01,2023);
 
 
     if ($datumHeute >= $startDatum)

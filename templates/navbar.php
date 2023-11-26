@@ -21,9 +21,12 @@
                     <a class="nav-link " href="tabata.php">tabata</a>
                 </li>
 
-                <li class="nav-item">
+
+                <!-- <li class="nav-item">
                     <a class="nav-link" style="background-color: rgb(153, 0, 0); color: white" href="adventkalender.php">Adventkalender</a>
-                </li>
+                </li> -->
+
+
 
                 <li class="nav-item">
                     <a class="nav-link " href="team.php">team</a>
@@ -49,90 +52,14 @@
             </ul>
 
 
-        <?php
-      if (isset($_SESSION["user"]))  {
-
-?>
-
-  <div class="navbar-right">
-      <ul class="navbar-nav">
-          <li class="nav-item fadeout">
-              <?php
-              echo $userRow['userEmail'] . '&nbsp'; ?>
-          </li>
-          <li class="nav-item">
-              <a href="registration/logout.php?logout">logout</a>
-          </li>
-
-          <?php
-  }      elseif (isset($_SESSION["access_token"])) {
-
-    ?>
-
-    <div class="navbar-right">
-        <ul class="navbar-nav">
-            <li class="nav-item fadeout">
-                <?php
-              echo $_SESSION['email'] . '&nbsp'; ?>
-            </li>
-            <li class="nav-item">
-                <a href="registration/logout.php?logout">logout</a>
-            </li>
-
-
-
-      <?php
-  }
-  else {
-
-      ?>
-
-
           <div class="navbar-right">
               <ul class="navbar-nav">
-
-                  <!-- <li class="nav-item">
-                      <a class="nav-link " href="./registration/login.php">login</a>
-                  </li> -->
-
-                  <?php
-                  if(!isset($countOffeneKacheln)  || ($countOffeneKacheln == 0))
-                  {
-
-                ?>
                     <li class="nav-item">
                     <img class="icon border" src="./assets/img/icon/rudolf_glasses.png" />
                   </li>
 
-                  
-                 
-
-
-
-                  <?php
-                   }
-                  if(isset($countOffeneKacheln) && ($countOffeneKacheln > 0))
-                    {
-
-  
-                  ?>
-     
-                    <li class="nav-item">
-                        <a class= "text-light" href="#index.php/cart">geöffnete Türchen (<?= $countOffeneKacheln ?>)</a>      
-                    </li>
-
-                <?php
-                }
-                ?>
-
               </ul>
           </div>
 
-      <?php
-
-  }
-      ?>
-
   </div>
-
-    </nav>
+</nav>
