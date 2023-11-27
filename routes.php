@@ -35,25 +35,25 @@ $countOffeneKacheln = countOffeneKacheln($userId);
 // $countDown = getCountdown($endTime);
 // echo $countDown;
 
-if(strpos($route, '/tabata/add') !== false)
-{
-    $routeParts = explode ("/", $route);
-    echo $tabataId = (int)$routeParts[3];
-    echo $dayId = (int)$routeParts[4];
-    echo $userId = getCurrentUserId();
+// if(strpos($route, '/tabata/add') !== false)
+// {
+//     $routeParts = explode ("/", $route);
+//     echo $tabataId = (int)$routeParts[3];
+//     echo $dayId = (int)$routeParts[4];
+//     echo $userId = getCurrentUserId();
 
-    $output = checkUser($userId);
-    if ($output == 0)
-    {
-        saveUserinDB($userId);
-    }
+//     $output = checkUser($userId);
+//     if ($output == 0)
+//     {
+//         saveUserinDB($userId);
+//     }
 
-    addTabataToCalendar($userId, $tabataId, $dayId);
+//     addTabataToCalendar($userId, $tabataId, $dayId);
 
-    header("Location: ".$baseUrl."index.php");
-    exit();
+//     header("Location: ".$baseUrl."index.php");
+//     exit();
 
-}
+// }
 
 // if(!$route )
 // {

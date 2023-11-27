@@ -1,6 +1,4 @@
 <?php
-//entspricht dem Cart/Einkaufwagen
-
 function addTabataToCalendar(int $userId, int $tabataId, int $dayId)
 {
     $sql = "INSERT INTO calendar SET userId = $userId, tabataId = $tabataId, dayId = $dayId";

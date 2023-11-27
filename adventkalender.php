@@ -1,3 +1,33 @@
+<?php
+session_start();
+// error_reporting(-1);
+// ini_set('display_errors','On');
+
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+
+define('CONFIG_DIR', __DIR__.'/config');
+require_once __DIR__.'/includes.php';
+
+$userId = getCurrentUserId();
+echo "<br>". $userId;
+
+setcookie('userId', $userId, strtotime ('+30 days')); 
+
+$countUserId = checkUser($userId);
+
+if($countUserId < 1)
+	saveUserinDB($userId);
+else
+	echo "User bereits in DB";
+echo "userId" . $userId;
+
+$result = getOffeneKachelnByUserId($userId);
+echo "<pre>";
+var_dump($result);
+echo "</pre>";
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -8,62 +38,25 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<script src="https://unpkg.com/vue@3.0.2"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-	<!-- <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/stylesheetVue.css">
 	<style>
 	</style>
 </head>
-	
-<style>
-	body {
-    font-family: "Fahkwang", sans-serif, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-    margin: 0;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  /* .card {
-    margin: 20px 10px 20px 10px;
-    padding: 20px 20px 20px 20px;
-    transition: all 0.5s;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
-    width: 100%;
-    height: 600px;
-  }
-  
-  .icon {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-  } */
 
-	#app {
-		background-color: rgb(102, 102, 51) !important;
-	}
-
-	.container-cal {
-		background-color: rgb(102, 102, 51) !important;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-
-	.container-adv {
-		background-color: rgb(102, 102, 51) !important;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-</style>
 <body>
 
 	<div id="app">
 
-        <div>
-        <h1>{{timerOutput}}</h1>
-        </div>
+	<?php echo $userId?>
+
+		<countdown></countdown>
+		<kalender :userId=<?php echo $userId?>></kalender>
+
+		<!-- Import App -->
+		<script src="app.js"></script>
+		<script src="./components/Countdown.js"></script>
+		<script src="./components/Kalender.js"></script>
+
 
 		<!-- <a v-bind:href="url" target="_blank">best website ever</a>
         <div>
@@ -86,16 +79,16 @@
 
 
         	<!-- {{days}} -->
-
-
-
-		<div class="container container-cal pb-4" id="adventtage">
-			<div v-for="day in days" >
-				<div class='card window bildbeschriftung' id="`${day.dayId}`">
-					<img :src="`./assets/img/icon/${day.dayId}.png`" style='width: 150px; height: 150px; background-color: white'/>
+			<!-- <div class="container container-cal pb-4" id="adventtage">
+				<div v-for="day in days" >
+					<div class='card window bildbeschriftung' id="`${day.dayId}`">
+						<img :src="`./assets/img/icon/${day.dayId}.png`" style='width: 150px; height: 150px; background-color: white'/>
+					</div>
 				</div>
-			</div>
-		</div>
+			</div> -->
+
+
+
 		
 
 	
@@ -119,6 +112,10 @@
 
 	</div>
 
-<script src="app.js"></script>
+	<!-- Mount App -->
+	<script>
+		const mountedApp = app.mount('#app')
+	</script>
+
 </body>
 </html>
