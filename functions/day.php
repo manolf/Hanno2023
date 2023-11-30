@@ -64,11 +64,11 @@ function isItTimeYet()
  
     $startDatum = mktime(0,0,0,12,01,2023);
 
-
     if ($datumHeute >= $startDatum)
         return true;
     else    
         return false;
+
 }
 
 function islastDayYet()

@@ -156,6 +156,13 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  .container-yoga {
+    background-color: rgb(242, 226, 211) !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   
   /* .notReady {
     background-color: white !important;
@@ -187,15 +194,15 @@ nav {
     transition: 1s;
   }
   
-  .clicked {
+  /* .clicked {
     background-color: red;
     border-radius: 5pt;
     transition: 1s;
-  }
+  } */
   
-  .window.clicked p {
+  .clicked {
     color: white;
-    font-size: 12pt;
+    font-size: 12pt !important;
   }
 
   /* .clickable{
@@ -327,11 +334,11 @@ index
   #brieferl{
     width: 256px;
     height: 256px;
-}
+  }
 
-#kinotime{
-  width: 256px;
-  height: 256px;
-}
+  #kinotime{
+    width: 256px;
+    height: 256px;
+  }
 
 }
